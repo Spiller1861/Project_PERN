@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+@font-face{
+  font-family: "Verdana";
+  src: url(FONT/Verdana.ttf);
+}
+@font-face{
+  font-family: "Roboto";
+  src: url(FONT/Roboto-Medium.ttf);
+}
+@font-face{
+  font-family: "Inter";
+  src: url(FONT/Inter-VariableFont_slnt,wght.ttf);
+}
+@font-face{
+  font-family: "Cooper Black";
+  src: url(FONT/cooperblack.ttf);
+}
+.slider {
+    position: relative;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+ 
+.slider-img {
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.slider-img img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3px;
+}
+ 
+.slider-img-prev {
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+ 
+.slider-img-next {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+}
+@media (max-width: 1140px) {
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 390px;
+    }
+    .slider-img img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+}  

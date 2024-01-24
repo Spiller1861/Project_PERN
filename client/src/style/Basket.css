@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: "Verdana";
+  src: url(FONT/Verdana.ttf);
+}
+@font-face{
+  font-family: "Roboto";
+  src: url(FONT/Roboto-Medium.ttf);
+}
+@font-face{
+  font-family: "Inter";
+  src: url(FONT/Inter-VariableFont_slnt,wght.ttf);
+}
+@font-face{
+  font-family: "Cooper Black";
+  src: url(FONT/cooperblack.ttf);
+}
+
+li{
+    list-style-type: none;
+}
+line{
+    border-top: 3px dotted black;
+}
+.wrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.wrapper .row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 15%;
+}
+.onlyforbasket{
+    display: row;
+    justify-content: center;
+    align-items: center;
+}
